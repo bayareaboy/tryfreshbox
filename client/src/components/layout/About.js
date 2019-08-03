@@ -10,33 +10,33 @@ export default function About() {
               <h3 class="title mb-15">How does it work? Simple.</h3>
             </div>
           </div>
-          <div class="row justify-content-center">
-            <ul>
-              <li>
-                <p>
-                  <span className="h3 ">1.</span> Choose a subscription plan
-                  that is best for your family size.
-                </p>
-              </li>{" "}
-              <br />
-              <li>
-                <p>
-                  <span className="h3 ">2.</span> We get it, not everyone adores
-                  the same things equally. Pick a <br />
-                  box type and we will only deliver fresh produce that you love.
-                </p>
-              </li>{" "}
-              <br />
-              <li>
-                <p>
-                  <span className="h3 ">3.</span> Now you're in control. Keep
-                  receiving amazing freshbox <br />
-                  everyweek, or pause, modify and cancel your subscription{" "}
-                  <br />
-                  anytime. See? Simple.
-                </p>
-              </li>
-            </ul>
+          <div className="container mr-250 ml-250">
+            <div class="row justify-content-center">
+              <ul>
+                <li>
+                  <p>
+                    <span className="h3 ">1.</span> Choose a subscription plan
+                    that is best for your family size.
+                  </p>
+                </li>{" "}
+                <br />
+                <li>
+                  <p>
+                    <span className="h3 ">2.</span> We get it, not everyone
+                    adores the same things equally. Pick a box type and we will
+                    only deliver fresh produce that you love.
+                  </p>
+                </li>{" "}
+                <br />
+                <li>
+                  <p>
+                    <span className="h3 ">3.</span> Now you're in control. Keep
+                    receiving amazing freshbox everyweek, or pause, modify and
+                    cancel your subscription anytime. See? Simple.
+                  </p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

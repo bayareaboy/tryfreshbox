@@ -71,6 +71,16 @@ class CheckoutMediumFruits extends Component {
                       plan anytime. No cancellation fees, hidden fees and any
                       extra fees at all.
                     </small>
+                    <hr />
+                    <small className="text-muted">
+                      Freshbox is Only available at:
+                      <ul>
+                        <li>San francisco</li>
+                        <li>Oakland</li>
+                        <li>Pleasant Hill</li>
+                        <li>Daly City</li>
+                      </ul>
+                    </small>
                   </div>
                   <span className="text-muted">$20</span>
                 </li>
