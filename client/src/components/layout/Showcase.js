@@ -33,21 +33,28 @@ export default function Showcase() {
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src="/dist/images/showcase/2.jpeg"
+                    src="/dist/images/showcase/boximage1.jpeg"
                     alt="tryFreshbox.com veggies img"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src="/dist/images/showcase/1.jpeg"
+                    src="/dist/images/showcase/boximage2.jpeg"
                     alt="tryFreshbox.com veggies img"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src="/dist/images/showcase/3.jpeg"
+                    src="/dist/images/showcase/boximage4.jpeg"
+                    alt="tryFreshbox.com veggies img"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src="/dist/images/showcase/boximage3.jpeg"
                     alt="tryFreshbox.com veggies img"
                   />
                 </Carousel.Item>
