@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
+import { createBrowserHistory } from "history";
+
 // Redux
 import { Provider } from "react-redux";
 import store from "./store";
@@ -26,13 +28,16 @@ import CheckoutMediumMix from "./components/checkout/CheckoutMediumMix";
 import CheckoutLargeFruits from "./components/checkout/CheckoutLargeFruits";
 import CheckoutLargeVeggies from "./components/checkout/CheckoutLargeVeggies";
 import CheckoutLargeMix from "./components/checkout/CheckoutLargeMix";
+import Promo from "./components/checkout/Promo";
 
 import Preloader from "./components/utils/Preloader";
 
 function App() {
+  const browserHistory = createBrowserHistory();
+
   return (
     <Provider store={store}>
-      <Router>
+      <Router history={browserHistory}>
         <div className="App">
           <Preloader />
           <Header />
@@ -44,6 +49,7 @@ function App() {
           <Route exact path="/ourstory" component={Ourstory} />
           <Route exact path="/partnerships" component={Partnerships} />
           <Route exact path="/choose-a-box-type" component={ChooseBox} />
+          <Route exact path="/promo50" component={Promo} />
 
           {
             // checkout routes
