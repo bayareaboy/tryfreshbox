@@ -1,7 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import { createBrowserHistory } from "history";
+import ScrollIntoView from "./ScrollIntoView";
 
 // Redux
 import { Provider } from "react-redux";
@@ -33,74 +33,75 @@ import Promo from "./components/checkout/Promo";
 import Preloader from "./components/utils/Preloader";
 
 function App() {
-  const browserHistory = createBrowserHistory();
-
   return (
     <Provider store={store}>
-      <Router history={browserHistory}>
+      <Router>
         <div className="App">
-          <Preloader />
-          <Header />
-          <Route exact path="/" component={LandingPage} />
-          <Route exact path="/freshbox-business" component={Businesses} />
-          <Route exact path="/privacy" component={Privacy} />
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/media" component={Media} />
-          <Route exact path="/ourstory" component={Ourstory} />
-          <Route exact path="/partnerships" component={Partnerships} />
-          <Route exact path="/choose-a-box-type" component={ChooseBox} />
-          <Route exact path="/promo50" component={Promo} />
+          <ScrollIntoView>
+            <Preloader />
+            <Header />
 
-          {
-            // checkout routes
-          }
-          <Route
-            exact
-            path="/checkout-small-fruits"
-            component={CheckoutSmallFruits}
-          />
-          <Route
-            exact
-            path="/checkout-small-veggies"
-            component={CheckoutSmallVeggies}
-          />
-          <Route
-            exact
-            path="/checkout-small-mix"
-            component={CheckoutSmallMix}
-          />
-          <Route
-            exact
-            path="/checkout-medium-fruits"
-            component={CheckoutMediumFruits}
-          />
-          <Route
-            exact
-            path="/checkout-medium-veggies"
-            component={CheckoutMediumVeggies}
-          />
-          <Route
-            exact
-            path="/checkout-medium-mix"
-            component={CheckoutMediumMix}
-          />
-          <Route
-            exact
-            path="/checkout-large-fruits"
-            component={CheckoutLargeFruits}
-          />
-          <Route
-            exact
-            path="/checkout-large-veggies"
-            component={CheckoutLargeVeggies}
-          />
-          <Route
-            exact
-            path="/checkout-large-mix"
-            component={CheckoutLargeMix}
-          />
+            <Route exact path="/" component={LandingPage} />
+            <Route exact path="/freshbox-business" component={Businesses} />
+            <Route exact path="/privacy" component={Privacy} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/media" component={Media} />
+            <Route exact path="/ourstory" component={Ourstory} />
+            <Route exact path="/partnerships" component={Partnerships} />
+            <Route exact path="/choose-a-box-type" component={ChooseBox} />
+            <Route exact path="/promo50" component={Promo} />
 
-          <Footer />
+            {
+              // checkout routes
+            }
+            <Route
+              exact
+              path="/checkout-small-fruits"
+              component={CheckoutSmallFruits}
+            />
+            <Route
+              exact
+              path="/checkout-small-veggies"
+              component={CheckoutSmallVeggies}
+            />
+            <Route
+              exact
+              path="/checkout-small-mix"
+              component={CheckoutSmallMix}
+            />
+            <Route
+              exact
+              path="/checkout-medium-fruits"
+              component={CheckoutMediumFruits}
+            />
+            <Route
+              exact
+              path="/checkout-medium-veggies"
+              component={CheckoutMediumVeggies}
+            />
+            <Route
+              exact
+              path="/checkout-medium-mix"
+              component={CheckoutMediumMix}
+            />
+            <Route
+              exact
+              path="/checkout-large-fruits"
+              component={CheckoutLargeFruits}
+            />
+            <Route
+              exact
+              path="/checkout-large-veggies"
+              component={CheckoutLargeVeggies}
+            />
+            <Route
+              exact
+              path="/checkout-large-mix"
+              component={CheckoutLargeMix}
+            />
+
+            <Footer />
+          </ScrollIntoView>
         </div>
       </Router>
     </Provider>
