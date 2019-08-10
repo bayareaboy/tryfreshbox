@@ -65,16 +65,6 @@ export default function Mix() {
                   delivered right to your doorstep everyweek. Always FRESH.{" "}
                   <br />
                 </p>
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-container="body"
-                  data-toggle="popover"
-                  data-placement="top"
-                  data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
-                >
-                  Popover on top
-                </button>
                 <Link to="/checkout-large-mix" class="btn btn-primary mt-15">
                   I want this
                 </Link>
