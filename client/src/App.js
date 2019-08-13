@@ -30,6 +30,7 @@ import CheckoutLargeVeggies from "./components/checkout/CheckoutLargeVeggies";
 import CheckoutLargeMix from "./components/checkout/CheckoutLargeMix";
 import Promo from "./components/checkout/Promo";
 import LargeBoxPay from "./components/checkout/payments/PaymentsLarge";
+import SmallBoxPay from "./components/checkout/payments/PaymentsSmall";
 
 import Preloader from "./components/utils/Preloader";
 
@@ -52,6 +53,7 @@ function App() {
             <Route exact path="/choose-a-box-type" component={ChooseBox} />
             <Route exact path="/promo50" component={Promo} />
             <Route exact path="/payments-large-box" component={LargeBoxPay} />
+            <Route exact path="/payments-small-box" component={SmallBoxPay} />
 
             {
               // checkout routes
