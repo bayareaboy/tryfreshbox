@@ -39,7 +39,7 @@ class Produce extends Component {
         {
           breakpoint: 480,
           settings: {
-            slidesToShow: 1.2,
+            slidesToShow: 1.35,
             slidesToScroll: 1
           }
         }
