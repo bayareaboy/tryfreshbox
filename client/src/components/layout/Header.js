@@ -35,7 +35,7 @@ export default function Header() {
                 >
                   <ul id="nav" className="navbar-nav ml-auto">
                     <li className="nav-item">
-                      <Link data-scroll-nav="0" to="/choose-a-box-type">
+                      <Link data-scroll-nav="0" to="/#produce">
                         Products
                       </Link>
                     </li>

@@ -15,24 +15,23 @@ export default function About() {
               <ul>
                 <li>
                   <p>
-                    <span className="h3 ">1.</span> Choose a subscription plan
-                    that is best for your family size.
+                    <span className="h3 ">1.</span> Browse and see our products.
                   </p>
                 </li>{" "}
                 <br />
                 <li>
                   <p>
-                    <span className="h3 ">2.</span> We get it, not everyone
-                    adores the same things equally. Pick a box type and we will
-                    only deliver fresh produce that you love.
+                    <span className="h3 ">2.</span> Choose a type of product you
+                    want and subscribe.
                   </p>
                 </li>{" "}
                 <br />
                 <li>
                   <p>
                     <span className="h3 ">3.</span> Now you're in control. Keep
-                    receiving amazing freshbox everyweek, or pause, modify and
-                    cancel your subscription anytime. See? Simple.
+                    receiving amazing freshbox products weekly, bi-weekly or
+                    monthly, or pause, modify and cancel your subscription
+                    anytime. See? Simple.
                   </p>
                 </li>
               </ul>

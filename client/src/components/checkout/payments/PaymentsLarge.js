@@ -12,8 +12,8 @@ toast.configure({
 
 export default function PaymentPage() {
   const [product] = useState({
-    name: "Freshbox Medium",
-    price: 25,
+    name: "Freshbox Large",
+    price: 30,
     description: "Great"
   });
   async function handleToken(token, addresses) {

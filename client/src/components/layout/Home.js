@@ -11,11 +11,13 @@ export default class Home extends Component {
               <div class="single-slider">
                 <div class="slider-bg">
                   <div class="row no-gutters align-items-center ">
-                    <div class="col-lg-4 col-md-5">
-                      <div class="slider-product-image d-none d-md-block">
-                        <img src="/dist/images/box.png" alt="Slider" />
-                      </div>
-                    </div>
+                    {
+                      // <div class="col-lg-4 col-md-5">
+                      //   <div class="slider-product-image d-none d-md-block">
+                      //     <img src="/dist/images/box.png" alt="Slider" />
+                      //   </div>
+                      // </div>
+                    }
                     <div class="col-lg-8 col-md-7">
                       <div class="slider-product-content">
                         <h1

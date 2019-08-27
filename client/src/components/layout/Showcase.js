@@ -12,15 +12,13 @@ export default function Showcase() {
                 <hr />
                 <div class="row">
                   <div class="col-sm">
-                    <i class="lni-delivery lni-tada-effect" /> FREE delivery
+                    <i class="lni-delivery " /> FREE delivery
                   </div>
                   <div class="col-sm">
-                    <i class="lni-emoji-smile lni-tada-effect" /> Satisfaction
-                    guarantee
+                    <i class="lni-emoji-smile " /> Satisfaction guarantee
                   </div>
                   <div class="col-sm">
-                    <i class="lni-check-mark-circle lni-tada-effect" /> Cancel
-                    anytime
+                    <i class="lni-check-mark-circle " /> Cancel anytime
                   </div>
                 </div>
                 <hr />
