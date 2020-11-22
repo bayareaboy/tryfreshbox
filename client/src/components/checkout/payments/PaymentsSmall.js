@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 toast.configure({
   autoClose: 8000,
-  draggable: false
+  draggable: false,
   //etc you get the idea
 });
 
@@ -14,22 +14,22 @@ export default function PaymentPage() {
   const [product] = useState({
     name: "Freshbox Small",
     price: 16,
-    description: "Great"
+    description: "Great",
   });
-  async function handleToken(token, addresses) {
+  async function handleToken(token) {
     const response = await axios.post("/api/orders/checkout", {
       token,
-      product
+      product,
     });
     const { status } = response.data;
     console.log("Response:", response.data);
     if (status === "success") {
       toast.success("Payment Successful! Receipt is sent to your email.", {
-        position: toast.POSITION.TOP_LEFT
+        position: toast.POSITION.TOP_LEFT,
       });
     } else {
       toast.error("Something went wrong", {
-        position: toast.POSITION.TOP_LEFT
+        position: toast.POSITION.TOP_LEFT,
       });
     }
   }

@@ -6,7 +6,7 @@ const bcrypt = require("bcryptjs");
 const config = require("config");
 const jwt = require("jsonwebtoken");
 const uuid = require("uuid");
-const stripe = require("stripe")("sk_live_dUw48koW29JInDUMiBWmKIuU000DhR33P5");
+const stripe = require("stripe")("");
 // @route post api/orders/submit, subscribe users
 // router.use(require("body-parser").text());
 
